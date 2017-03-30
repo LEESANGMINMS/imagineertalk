@@ -1,0 +1,6 @@
+framework module Pods_imagineertalk {
+  umbrella header "Pods-imagineertalk-umbrella.h"
+
+  export *
+  module * { export * }
+}
