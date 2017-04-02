@@ -43,27 +43,33 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = self.chatTableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        // Unpack message from Firebase DataSnapshot
+        let messageSnapshot: FIRDataSnapshot! = self.messages[indexPath.row]
+        guard let message = messageSnapshot.value as? [String:String] else { return cell }
+        let text = message["text"] ?? "[text]"
+        cell.textLabel?.text = text
+        return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return messages.count
     }
     
     deinit {
-//        if let refHandle = _refHandle {
-//            self.ref.child("messages").removeObserver(withHandle: _refHandle)
-//        }
+        if let refHandle = _refHandle {
+            self.ref.child("messages").removeObserver(withHandle: _refHandle)
+        }
     }
     
     func configureDatabase() {
         ref = FIRDatabase.database().reference()
-        // Listen for new messages in the Firebase database
-//        _refHandle = self.ref.child("messages").observe(.childAdded, with: { [weak self] (snapshot) -> Void in
-//            guard let strongSelf = self else { return }
-//            strongSelf.messages.append(snapshot)
-//            strongSelf.clientTable.insertRows(at: [IndexPath(row: strongSelf.messages.count-1, section: 0)], with: .automatic)
-//        })
+//         Listen for new messages in the Firebase database
+        _refHandle = self.ref.child("messages").observe(.childAdded, with: { [weak self] (snapshot) -> Void in
+            guard let strongSelf = self else { return }
+            strongSelf.messages.append(snapshot)
+            strongSelf.chatTableView.insertRows(at: [IndexPath(row: strongSelf.messages.count-1, section: 0)], with: .automatic)
+        })
     }
     
 }

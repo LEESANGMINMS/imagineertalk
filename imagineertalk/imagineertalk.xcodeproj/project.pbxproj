@@ -7,17 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A1D8CCD1E90D65600AB4CB5 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D8CCC1E90D65600AB4CB5 /* AuthViewController.swift */; };
+		6A1D8CCF1E90DD9E00AB4CB5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D8CCE1E90DD9E00AB4CB5 /* MainViewController.swift */; };
+		6A1D8CD11E90E49000AB4CB5 /* PreAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1D8CD01E90E49000AB4CB5 /* PreAuthViewController.swift */; };
+		6A8DCA4C1E8EBADE00B06E63 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A8DCA4B1E8EBADE00B06E63 /* GoogleService-Info.plist */; };
 		6ADBEE141E8D514D004148F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBEE131E8D514D004148F8 /* AppDelegate.swift */; };
 		6ADBEE161E8D514D004148F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADBEE151E8D514D004148F8 /* ViewController.swift */; };
 		6ADBEE191E8D514D004148F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBEE171E8D514D004148F8 /* Main.storyboard */; };
 		6ADBEE1B1E8D514D004148F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBEE1A1E8D514D004148F8 /* Assets.xcassets */; };
 		6ADBEE1E1E8D514D004148F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBEE1C1E8D514D004148F8 /* LaunchScreen.storyboard */; };
-		6ADBEE261E8D5253004148F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6ADBEE251E8D5253004148F8 /* GoogleService-Info.plist */; };
 		876A2F9540CBEB9CD57D69FC /* Pods_imagineertalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA624653270B67AECEAC00DB /* Pods_imagineertalk.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4885571357E99622352DF801 /* Pods-imagineertalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imagineertalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-imagineertalk/Pods-imagineertalk.release.xcconfig"; sourceTree = "<group>"; };
+		6A1D8CCC1E90D65600AB4CB5 /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		6A1D8CCE1E90DD9E00AB4CB5 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6A1D8CD01E90E49000AB4CB5 /* PreAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreAuthViewController.swift; sourceTree = "<group>"; };
+		6A8DCA4B1E8EBADE00B06E63 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6ADBEE101E8D514D004148F8 /* imagineertalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imagineertalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADBEE131E8D514D004148F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6ADBEE151E8D514D004148F8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +32,6 @@
 		6ADBEE1A1E8D514D004148F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ADBEE1D1E8D514D004148F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6ADBEE1F1E8D514D004148F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6ADBEE251E8D5253004148F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DA624653270B67AECEAC00DB /* Pods_imagineertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_imagineertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA77A0F87F3F7B7E9FB3024 /* Pods-imagineertalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-imagineertalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-imagineertalk/Pods-imagineertalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -78,7 +84,10 @@
 				6ADBEE1A1E8D514D004148F8 /* Assets.xcassets */,
 				6ADBEE1C1E8D514D004148F8 /* LaunchScreen.storyboard */,
 				6ADBEE1F1E8D514D004148F8 /* Info.plist */,
-				6ADBEE251E8D5253004148F8 /* GoogleService-Info.plist */,
+				6A8DCA4B1E8EBADE00B06E63 /* GoogleService-Info.plist */,
+				6A1D8CCC1E90D65600AB4CB5 /* AuthViewController.swift */,
+				6A1D8CCE1E90DD9E00AB4CB5 /* MainViewController.swift */,
+				6A1D8CD01E90E49000AB4CB5 /* PreAuthViewController.swift */,
 			);
 			path = imagineertalk;
 			sourceTree = "<group>";
@@ -155,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADBEE1E1E8D514D004148F8 /* LaunchScreen.storyboard in Resources */,
-				6ADBEE261E8D5253004148F8 /* GoogleService-Info.plist in Resources */,
+				6A8DCA4C1E8EBADE00B06E63 /* GoogleService-Info.plist in Resources */,
 				6ADBEE1B1E8D514D004148F8 /* Assets.xcassets in Resources */,
 				6ADBEE191E8D514D004148F8 /* Main.storyboard in Resources */,
 			);
@@ -217,7 +226,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ADBEE161E8D514D004148F8 /* ViewController.swift in Sources */,
+				6A1D8CD11E90E49000AB4CB5 /* PreAuthViewController.swift in Sources */,
+				6A1D8CCD1E90D65600AB4CB5 /* AuthViewController.swift in Sources */,
 				6ADBEE141E8D514D004148F8 /* AppDelegate.swift in Sources */,
+				6A1D8CCF1E90DD9E00AB4CB5 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +393,7 @@
 				6ADBEE241E8D514D004148F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
